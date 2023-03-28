@@ -1,94 +1,134 @@
+<!-- TABLE OF CONTENTS -->
+
 # 📗 Table of Contents
+
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
-- [Tech Stack](#tech-stack)
-- [Key Features](#key-features)
-- [🎥 Video Explanation](#video-explanation)   
-- [🚀 Live Demo](#live-demo)    
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
--- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 [Awesome_Books] <a name="Awesome Books"></a>
+<!-- PROJECT DESCRIPTION -->
 
+# 📖 [Todo List] <a name="about-project"></a>
+This is todo list list projects where you can add todos and remove todos and see them in a list.
 
-**[Awesome_Books]** is a simple website that displays a list of books and allows you to add and remove books from that list. By building this application, you will learn how to manage data using JavaScript ES6. Thanks to that, your website will be more interactive. You will also use a medium-fidelity wireframe to build the UI.
-
-## 🛠 Built With  <a name="built-with"></a>
+## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-  <summary>Javascript ES6 runtime environment</summary>
-  <ul>
-    <li><a href="https://nodejs.org/en/">Node JS</a></li>
-  </ul>
 
-  <summary>Version control</summary>
+<details>
+  <summary>Client</summary>
   <ul>
-    <li><a href="github.com">Git Hub</a></li>
+    <li><a href="https://reactjs.org/">HTML, CSS and JS</a></li>
   </ul>
 </details>
 
+<!-- Features -->
+
 ### Key Features <a name="key-features"></a>
 
-- **[Medium-fidelity Wireframes]**
-- **[Desktop Version]**
-- **[Dynamic Design]**
-- **[SPA design]**
+- **[clean ui]**
+- **[good design]**
+- **[good graphics]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🎥 Video Explanation <a name="video-explanation"></a>
-Coming soon!
-
-## 🚀 Live Demo <a name="live-demo"></a>
-Coming Soon!
-
-
+<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
 
 To get a local copy up and running, follow these steps.
 
-
 ### Prerequisites
 
 In order to run this project you need:
-you have to have Code editor and Github account to have the source code
+
+```sh
+  npm intall -g live-server
+  live-server
+```
 
 ### Setup
 
 Clone this repository to your desired folder:
-git clone https://github.com/Atifzada/Awesome_Books_ES6
+
+
+commands:
+
+```sh
+  cd my-folder
+  git clone https://github.com/Atifzada/Todo-List/
+```
+-
 
 ### Install
 
-Install this project:
+Install this project with:
+
+
+command:
+
+```sh
+  cd my-project
+  npm install
+```
 
 
 ### Usage
 
 To run the project, execute the following command:
 
-Once you clone the project then select live server you will see portfolio website displayed on the browser
+
+command:
+
+```sh
+  npm run dev
+```
+
 
 ### Run tests
 
-To run tests, run the following command: Not Applicable
+To run tests, run the following command:
+
+
+```sh
+  npx hint .
+  npx eslint .
+  npx stylelint "**/*.{css,scss}"
+```
 
 
 ### Deployment
 
-website can be deployed using Github pages:
+You can deploy this project by just pushing it and github pages will do the rest:
+```sh
+  git checkout main
+  git push
+```
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 👥 Authors <a name="authors"></a>
@@ -99,28 +139,65 @@ website can be deployed using Github pages:
 - Twitter: [@atifzada](https://twitter.com/atifzada04)
 - LinkedIn: [@atifzada](https://www.linkedin.com/in/atif-zada-585693180/)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-# **[Feature-1]** 
-- Add more styling (aesthetics)
 
-# **[Feature-2]** 
-- Add mobile version 
+- [ ] **[clean ui design]**
+- [ ] **[minimalistic design]**
+- [ ] **[supre easy to read]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/AtifZada/Awesome-Books/issues).
+Feel free to check the [issues page](https://github.com/Atifzada/Todo-List/issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project, kindly leave a comment below and share it with someone who enjoys coding! Coding is all about continuous learning and allowing yourself to be a beginner. Keep going! 
 
-## 🙏 Acknowledgments <a name="Microverse Inc."></a>
+If you like this project please give a star. 
 
-I'm thankful to Microverse for providing a study platform which guided me through this project and to my coding partners at Microverse for the collaborative effort. 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+
+
+I would like to thank all the people that contributed in this project .
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FAQ (optional) -->
+
+## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+
+
+
+- **[how can i run it?]**
+
+  - [local server]
+
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
 
 ## 📝 License <a name="license"></a>
 
