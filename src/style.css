@@ -1,50 +1,126 @@
-body {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: blue;
-}
-
-ul {
-  list-style-type: none;
+* {
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-ul li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+body {
+  background-color: #f1f2f5;
+  font-family:
+    "Lucida Sans",
+    "Lucida Sans Regular",
+    "Lucida Grande",
+    "Lucida Sans Unicode",
+    sans-serif;
 }
 
-ul li div {
-  display: flex;
+i {
+  cursor: pointer;
+}
+
+.title {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 2.5%;
 }
 
 .main {
-  width: 25%;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 4px;
-}
-
-.remove {
-  border: 0 none;
-  width: 100%;
-  padding: 20px;
-}
-
-.toDoTitle {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-content: center;
   justify-content: center;
+  width: 30%;
+  margin-left: 35%;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 2%;
 }
 
-.more {
-  border: 0 none;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5%;
+  border-bottom: 1.5px #ddd solid;
 }
 
-form {
-  border-top: #888 1px solid;
-  border-bottom: #888 1px solid;
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2%;
+  padding-bottom: 2%;
+  border-bottom: #ddd 1.5px solid;
+}
+
+.form input {
+  width: 85%;
+  height: 30px;
+  font-size: 1rem;
+  font-style: italic;
+  padding-left: 2%;
+  outline: none;
+  border: none;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px #ddd solid;
+  margin-bottom: 2%;
+  padding-bottom: 2%;
+}
+
+.text {
+  display: flex;
+  width: 60%;
+}
+
+.text p {
+  margin-left: 3%;
+}
+
+.taskCompleted {
+  text-decoration: line-through;
+  outline: none;
+  border: none;
+  margin-left: 2%;
+  margin-top: 2%;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.edit {
+  outline: none;
+  border: none;
+  margin-left: 2%;
+  margin-top: 2%;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.clear {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  width: 50%;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transition: 0.5s ease-in-out;
+  background-color: rgb(58, 135, 211);
+  color: black;
 }
