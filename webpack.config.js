@@ -1,19 +1,27 @@
-/* eslint-disable */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
-  entry: path.resolve(__dirname, 'src/index.js'),
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'main.js',
+  entry: {
+    index: './src/index.js',
   },
+  mode: 'none',
+  devtool: 'inline-source-map',
   devServer: {
-    static: {
-      directory: path.resolve(__dirname, 'dist'),
-    },
-    open: true,
+    static: './dist',
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+    }),
+  ],
+  output: {
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+    clean: true,
+  },
+  optimization: {
+    runtimeChunk: 'single',
   },
   module: {
     rules: [
@@ -21,17 +29,10 @@ module.exports = {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+      },
     ],
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: 'Todo app',
-      filename: 'index.html',
-      template: 'src/index.html',
-    }),
-  ],
-  resolve: {
-    extensions: ['.js', '.jsx', '.json'],
-    modules: [path.resolve(__dirname, 'src'), 'node_modules'],
   },
 };

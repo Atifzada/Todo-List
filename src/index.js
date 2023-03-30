@@ -1,14 +1,40 @@
-import renderTaskList from './modules/renderTaskList.js';
 import './style.css';
+import {
+  renderList, addToList, editTask, removeTask,
+} from './modules/taskFunction.js';
 
-const TodoContainer = document.getElementById('mytodo-list');
+const tasksList = document.getElementById('myTasksList');
+const newTask = document.getElementById('input');
+const submit = document.getElementById('submit');
 
-const tasks = [
-  { description: 'Task_01', completed: false, index: 2 },
-  { description: 'Task_02', completed: true, index: 3 },
-  { description: 'Task_03', completed: false, index: 1 },
-];
+/* Add To List */
+newTask.addEventListener('keypress', (e) => {
+  addToList(e);
+});
 
-const sortedTasks = tasks.sort((a, b) => a.index - b.index);
+/* Add to List (clicked) */
+submit.addEventListener('click', () => {
+  addToList('clicked');
+});
 
-renderTaskList(sortedTasks, TodoContainer);
+/* Delete Task */
+tasksList.addEventListener('click', (event) => {
+  const clickedItem = event.target.classList[event.target.classList.length - 1];
+  const li = event.target.parentElement;
+  if (clickedItem === 'deleteTask') {
+    removeTask(li.index);
+    event.target.parentElement.remove();
+  }
+});
+
+/* Edit Task */
+tasksList.addEventListener('keypress', (event) => {
+  const taskToEdit = event.target.classList[event.target.classList.length - 1];
+  const li = event.target.parentElement;
+  const index = li.id;
+  if (taskToEdit === 'edit') {
+    editTask(index, event);
+  }
+});
+
+document.addEventListener('DOMContentLoaded', renderList());
