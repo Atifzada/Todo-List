@@ -130,6 +130,9 @@ You can deploy this project by just pushing it and github pages will do the rest
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Deployment
+
+- Deployed at GitHub Pages: [ToDo List Project](https://atifzada.github.io/Todo-List/dist/)
 
 ## 👥 Authors <a name="authors"></a>
 
