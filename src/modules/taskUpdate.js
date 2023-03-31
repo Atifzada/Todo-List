@@ -2,7 +2,7 @@ import { tasksToDo, renderList, yetTodo } from './taskFunction.js';
 
 const checkedTask = ({ index, status }) => {
   tasksToDo[index - 1].completed = status;
-  localStorage.setItem('tasksTodo', JSON.stringify(tasksToDo));
+  localStorage.setItem('tasksToDo', JSON.stringify(tasksToDo));
   renderList();
 };
 
