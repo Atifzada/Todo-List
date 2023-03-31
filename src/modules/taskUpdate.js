@@ -12,7 +12,7 @@ const completedTasks = () => {
     element.index = index + 1;
     return element;
   });
-  localStorage.setItem('tasksTodo', JSON.stringify(newtodo));
+  localStorage.setItem('tasksToDo', JSON.stringify(newtodo));
   yetTodo(newtodo);
 };
 
