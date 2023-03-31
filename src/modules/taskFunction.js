@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-mutable-exports
 let tasksToDo = JSON.parse(localStorage.getItem('tasksToDo')) || [];
 
 const taskList = document.getElementById('myTasksList');
@@ -9,17 +10,14 @@ const renderList = () => {
     const taskCard = document.createElement('div');
     taskCard.classList = 'content';
     taskCard.index = `${task.index}`;
-    taskCard.innerHTML = `<div class="text" id='${task.index}'>
-                          <input id='checkboxBtn' type="checkbox"></input>
-                            <input id="desc" class="${task.completed === true ? 'taskCmpleted' : 'edit'}"
+    taskCard.innerHTML = `<div class="text" id="${task.index}"> 
+                            ${task.completed === true ? `
+                            <input type="checkbox" id="checkbox" class="checked" checked></input>` : '<input type="checkbox" id="checkbox" class="unchecked"></input>'}
+                            <input class="${task.completed === true ? 'taskCompleted editTask' : 'editTask'}"
                               type="text" value="${task.description}">
                             </input>
                           </div>
                           <i class="fa-solid fa-trash-can deleteTask" id="deleteTask"></i>`;
-    const desc = document.getElementById('desc');
-    if (task.completed === true) {
-      desc.classList.add('taskCompleted');
-    }
     taskList.appendChild(taskCard);
   });
 };
@@ -63,6 +61,11 @@ const removeTask = (targetIndex) => {
   renderList();
 };
 
+const yetTodo = (data) => {
+  tasksToDo = data;
+  renderList();
+};
+
 export {
-  renderList, addToList, editTask, removeTask,
+  renderList, addToList, editTask, removeTask, tasksToDo, yetTodo,
 };

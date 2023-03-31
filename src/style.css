@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #f1f2f5;
+  background-color: #05ffde;
   font-family:
     "Lucida Sans",
     "Lucida Sans Regular",
@@ -85,6 +85,9 @@ i {
 
 .taskCompleted {
   text-decoration: line-through;
+}
+
+.editTask {
   outline: none;
   border: none;
   margin-left: 2%;
@@ -112,11 +115,12 @@ i {
   width: 50%;
   height: 40px;
   outline: none;
-  border: none;
   border-radius: 10px;
   background-color: #fff;
   font-size: 1rem;
   cursor: pointer;
+  border: 1px solid black;
+  margin-top: 5%;
 }
 
 .btn:hover {
